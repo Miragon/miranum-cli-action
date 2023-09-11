@@ -11,7 +11,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ iputs.project-directory }}
+    - ${{ inputs.project-directory }}
 
 branding: 
   icon: 'activity'
