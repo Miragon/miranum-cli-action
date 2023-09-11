@@ -1,0 +1,18 @@
+name: "miranum-cli-action"
+description: "Use the miranum cli and deploy your artefacts to your application."
+author: "Amin Yacine"
+
+inputs:
+  project-directory:
+    description: 'directory of project files'
+    required: true
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ iputs.project-directory }}
+
+branding: 
+  icon: 'activity'
+  color: 'blue'
